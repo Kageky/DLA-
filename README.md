@@ -1,11 +1,10 @@
-# DLA
 # Моделирование агрегации, ограниченной диффузией (DLA)
 
 Дипломный проект: симуляция роста фрактальных кластеров методом Diffusion-Limited Aggregation. Частицы совершают случайное блуждание по области и прилипают к кластеру при столкновении. Реализовано 4 типа симуляции с разными начальными условиями и правилами движения частиц, всё считается и отрисовывается в реальном времени.
 
-**Стек:** Python, Pygame, asyncio
+**Стек:** Python, Pygame, asyncio · МИРЭА, прикладная математика и информатика, 2025
 
-<img src="images/type4-star-black.png" width="420">
+<img src="type4-star-black.png" width="420">
 
 ## Четыре типа симуляции
 
@@ -15,25 +14,25 @@
 
 Зерно в центре, частицы блуждают по всей области и прилипают к растущему кластеру. Каноничная радиально-симметричная фрактальная структура.
 
-<img src="images/type1-white.png" width="330"> <img src="images/type1-black.png" width="330">
+<img src="type1-white.png" width="330"> <img src="type1-black.png" width="330">
 
 ### Тип 2 — броуновские деревья
 
 Зёрна расставлены по нижней границе, частицы запускаются сверху и движутся со смещением вниз, имитируя гравитацию. Направленное движение даёт анизотропные структуры — вытянутые вверх деревья с ветвями.
 
-<img src="images/type2-white.png" width="330"> <img src="images/type2-black.png" width="330">
+<img src="type2-white.png" width="330"> <img src="type2-black.png" width="330">
 
 ### Тип 3 — рост со всех сторон
 
 Зёрна по всему периметру области, частицы стартуют из случайных точек внутри. Отсутствие смещения даёт изотропный рост и симметричную сетчатую структуру.
 
-<img src="images/type3-white.png" width="330"> <img src="images/type3-black.png" width="330">
+<img src="type3-white.png" width="330"> <img src="type3-black.png" width="330">
 
 ### Тип 4 — рост на поверхности фигуры
 
 Начальные зёрна образуют контур пятиконечной звезды, частицы запускаются с границ экрана и дрейфуют к центру. Ветви наследуют геометрию исходной фигуры — структура сочетает симметрию звезды с хаотичностью DLA.
 
-<img src="images/type4-star-white.png" width="330"> <img src="images/type4-star-black.png" width="330">
+<img src="type4-star-white.png" width="330"> <img src="type4-star-black.png" width="330">
 
 ## Форма частиц
 
@@ -41,7 +40,7 @@
 
 | Круг | Квадрат | Треугольник | Микс |
 |---|---|---|---|
-| <img src="images/shape-circle.png" width="200"> | <img src="images/shape-square.png" width="200"> | <img src="images/shape-triangle.png" width="200"> | <img src="images/shape-mixed.png" width="200"> |
+| <img src="shape-circle.png" width="200"> | <img src="shape-square.png" width="200"> | <img src="shape-triangle.png" width="200"> | <img src="shape-mixed.png" width="200"> |
 
 ## Технические решения
 
